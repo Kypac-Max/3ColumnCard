@@ -104,20 +104,8 @@ button {
 	transition: background 0.3s, outline 0.4s, color 0.4s;
 }
 
-.button-first:hover {
+.hov:hover {
 	color: var(--very-light-gray);
-	background-color: var(--bright-orange);
-	outline: 2px solid var(--very-light-gray);
-}
-
-.button-second:hover {
-	color: var(--very-light-gray);
-	background-color: var(--dark-cyan);
-	outline: 2px solid var(--very-light-gray);
-}
-
-.button-third:hover {
-	color: var(--very-light-gray);
-	background-color: var(--very-dark-cyan);
+	background-color: transparent;
 	outline: 2px solid var(--very-light-gray);
 }
