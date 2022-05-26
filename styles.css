@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+html {
+	font-size: 10px;
+}
+
+:root {
+	/* Color */
+	--bright-orange: hsl(31, 77%, 52%);
+	--dark-cyan: hsl(184, 100%, 22%);
+	--very-dark-cyan: hsl(179, 100%, 13%);
+	--transparent-white: hsla(0, 0%, 100%, 0.75);
+	--very-light-gray: hsl(0, 0%, 95%);
+
+	/* Font */
+	--font-size: 15px;
+	--font-family-lexend: "Lexend Deca", sans-serif;
+	--font-weight-lexend: 400;
+	--font-family-shoulders: "Big Shoulders Display", cursive;
+	--font-weight-shoulders: 700;
+}
+body {
+	background-color: var(--very-light-gray);
+}
+
+.container {
+	width: 65%;
+	margin: 10rem auto;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.content {
+	display: flex;
+	flex-direction: row;
+}
+
+@media only screen and (max-width: 1200px) {
+	.content {
+		flex-direction: column;
+	}
+}
+
+.cards {
+	padding: 5rem;
+	height: 40rem;
+	position: relative;
+}
+
+h1 {
+	font-family: var(--font-family-shoulders);
+	font-weight: var(--font-weight-shoulders);
+	font-size: 3.5rem;
+	color: var(--very-light-gray);
+}
+
+p {
+	font-family: var(--font-family-lexend);
+	font-weight: var(--font-weight-lexend);
+	font-size: var(--font-size);
+	color: var(--transparent-white);
+}
+
+button {
+	position: absolute;
+	bottom: -6vh;
+	left: 0;
+	border: 0;
+	border-radius: 2.2rem;
+	margin: 10rem 4rem;
+	padding: 1.4rem 3rem;
+	font-family: var(--font-family-lexend);
+	font-weight: var(--font-weight-lexend);
+	font-size: 1.3rem;
+}
+
+.first {
+	background-color: var(--bright-orange);
+}
+
+.second {
+	background-color: var(--dark-cyan);
+}
+
+.third {
+	background-color: var(--very-dark-cyan);
+}
+
+.button-first {
+	color: var(--bright-orange);
+}
+
+.button-second {
+	color: var(--dark-cyan);
+}
+
+.button-third {
+	color: var(--very-dark-cyan);
+}
+
+.cards > button {
+	outline: 2px solid #f2f2f2;
+	transition: background 0.3s;
+}
+
+.button-first:hover {
+	color: var(--very-light-gray);
+	background-color: var(--bright-orange);
+}
+
+.button-second:hover {
+	color: var(--very-light-gray);
+	background-color: var(--dark-cyan);
+}
+
+.button-third:hover {
+	color: var(--very-light-gray);
+	background-color: var(--very-dark-cyan);
+}
